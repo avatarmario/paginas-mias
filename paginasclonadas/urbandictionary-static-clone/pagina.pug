@@ -1,0 +1,31 @@
+doctype html 
+html 
+    head    
+        meta(charset="utf-8")
+        meta(name="description" content="urban dictionary clone")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title urban dictionary
+        link(rel="stylesheet" href="/css/style.css")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;900&display=swap" rel="stylesheet")
+    body 
+        header.header 
+            section.logobar
+                img.logobar__logo(src="logo.png", alt="Logo")
+                ul.logobar__list
+                    li.logobar__list--item.dropdown: a(href="#") Browse
+                    
+                    li.logobar__list--item.dropdown: a(href="#") Categories
+                    li.logobar__list--item: a(href="#") Store
+                    li.logobar__list--item: a(href="#") Blog
+
+            section.searchbar
+                input.searchbar__input(type="text" placeholder="Type any word...")
+                .searchbar__options
+                    a(href="#"): img(src="plus-icon.png", alt="plus")
+                    a(href="#"): img(src="shuffle-icon.png", alt="shuffle")
+                    a(href="#"): img(src="user-icon.png", alt="profile")
+
+        main 
+        footer
