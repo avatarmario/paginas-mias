@@ -20,7 +20,7 @@ html {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 150px;
+    height: 160px;
     background-color: $header-color;
 
     .logobar {
@@ -40,13 +40,24 @@ html {
             list-style: none;
             &--item {
                 margin: 0 25px; 
+                align-items: center;
                 a {
                     color: $header-font-color;
                     text-decoration: none;
                     font-family: $primary-font;
                     font-weight: 700;
-                    font-size: 1.3rem;
+                    font-size: 1.6rem;
                 }
+            }
+            .dropdown-icon {
+                position: absolute;
+                margin-left: 5px;
+                width: 15px;
+                height: 15px;
+                background-image: url("/sort-down-arrow.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                vertical-align: middle;
             }
         }
 
@@ -57,9 +68,10 @@ html {
         align-items: center;
         width: 60%;
         height: 60px;
+        margin-top: 15px;
         &__input {
-            width: 750px;
-            height: 50px;
+            width: 880px;
+            height: 65px;
             outline: none;
             border: none;
             border-radius: 2px;
@@ -97,5 +109,14 @@ html {
             
         }
 
+    }
+
+    ::placeholder {
+        font-family: $primary-font;
+        font-size: 2.4rem;
+        opacity: .33;
+        //font-weight: 500;
+        padding: 10px;
+        margin-left: 10px;
     }
 }

@@ -14,9 +14,12 @@ html
             section.logobar
                 img.logobar__logo(src="logo.png", alt="Logo")
                 ul.logobar__list
-                    li.logobar__list--item.dropdown: a(href="#") Browse
-                    
-                    li.logobar__list--item.dropdown: a(href="#") Categories
+                    li.logobar__list--item.dropdown 
+                        a(href="#") Browse
+                        span.dropdown-icon
+                    li.logobar__list--item.dropdown
+                        a(href="#") Categories
+                        span.dropdown-icon
                     li.logobar__list--item: a(href="#") Store
                     li.logobar__list--item: a(href="#") Blog
 
