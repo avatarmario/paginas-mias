@@ -1,3 +1,6 @@
+-var alfabeto = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "x", "Y", "Z", "#", "NEW"]
+-var sections
+
 doctype html 
 html 
     head    
@@ -14,12 +17,50 @@ html
             section.logobar
                 img.logobar__logo(src="logo.png", alt="Logo")
                 ul.logobar__list
-                    li.logobar__list--item.dropdown 
+                    li.logobar__list--item.dropdown.bajar--alfabeto 
                         a(href="#") Browse
                         span.dropdown-icon
-                    li.logobar__list--item.dropdown
+                        .menu--alfabeto 
+                            ul
+                                each letra in alfabeto
+                                    li
+                                        a(class="letra" href="#")=letra
+                    li.logobar__list--item.dropdown.categories--drop
                         a(href="#") Categories
                         span.dropdown-icon
+                        .categories--menu 
+                            ul
+                                li
+                                    img.icon(src="graduation-icon.png")
+                                    a(class="letra"
+                                    href="#") College 
+                                li
+                                    img.icon
+                                    a(class="letra" href="#") Food
+                                li
+                                    img.icon
+                                    a(class="letra" href="#") Drugs
+                                li
+                                    img.icon
+                                    a(class="letra" href="#") Internet
+                                li
+                                    img.icon
+                                    a(class="letra" href="#") Music
+                                li
+                                    img.icon
+                                    a(class="letra" href="#") Name
+                                li
+                                    img.icon
+                                    a(class="letra" href="#") Religion
+                                li
+                                    img.icon
+                                    a(class="letra" href="#") Sex
+                                li
+                                    img.icon
+                                    a(class="letra" href="#") Sports
+                                li
+                                    img.icon
+                                    a(class="letra" href="#") Work
                     li.logobar__list--item: a(href="#") Store
                     li.logobar__list--item: a(href="#") Blog
 
